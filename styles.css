@@ -2,3 +2,21 @@
     background-color: #d4f8c4;
     font-style: italic;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 10px;
+}

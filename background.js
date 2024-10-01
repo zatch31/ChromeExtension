@@ -1,3 +1,3 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log('Extension Installed');
+    chrome.storage.sync.set({ inputLanguage: 'en', outputLanguage: 'en' });
 });

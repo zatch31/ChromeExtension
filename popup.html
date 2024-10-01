@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Web Translator</title>
+    <title>WhatsApp Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <label for="userLang">Your Language:</label>
-    <select id="userLang">
+    <h2>Set Your Preferred Language</h2>
+    <label for="input-language">Input Language:</label>
+    <select id="input-language">
         <option value="en">English</option>
         <option value="es">Spanish</option>
         <option value="fr">French</option>
-        <!-- Add more languages as needed -->
+        <option value="de">German</option>
+        <!-- Add more language options -->
     </select>
 
-    <label for="recipientLang">Recipient's Language:</label>
-    <select id="recipientLang">
+    <label for="output-language">Output Language:</label>
+    <select id="output-language">
         <option value="en">English</option>
         <option value="es">Spanish</option>
         <option value="fr">French</option>
-        <!-- Add more languages as needed -->
+        <option value="de">German</option>
+        <!-- Add more language options -->
     </select>
 
-    <button id="saveLang">Save Language Preferences</button>
+    <button id="save-btn">Save Preferences</button>
 
     <script src="popup.js"></script>
 </body>
+
 </html>

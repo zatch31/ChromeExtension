@@ -1,12 +1,12 @@
-document.getElementById('saveLang').addEventListener('click', function () {
-    const userLang = document.getElementById('userLang').value;
-    const recipientLang = document.getElementById('recipientLang').value;
+document.getElementById('save-btn').addEventListener('click', () => {
+    const inputLang = document.getElementById('input-language').value;
+    const outputLang = document.getElementById('output-language').value;
 
-    // Save to local storage
+    // Save preferences in Chrome storage
     chrome.storage.sync.set({
-        userLang: userLang,
-        recipientLang: recipientLang
-    }, function () {
-        alert('Language preferences saved.');
+        inputLanguage: inputLang,
+        outputLanguage: outputLang
+    }, () => {
+        alert('Language preferences saved!');
     });
 });
