@@ -1,28 +1,35 @@
 {
-    "manifest_version": 3,
-    "name": "WhatsApp Language Translator",
-    "version": "1.0",
-    "description": "Translate WhatsApp chats and messages into preferred languages.",
-    "permissions": ["activeTab", "scripting", "storage", "https://translate.googleapis.com/"],
-    "host_permissions": [
-      "https://web.whatsapp.com/*"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://web.whatsapp.com/*"],
-        "js": ["content.js"]
-      }
-    ],
-    "icons": {
-      "16": "icon.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+  "manifest_version": 3,
+  "name": "WhatsApp Language Translator",
+  "version": "1.0",
+  "description": "Translate WhatsApp chats and messages into preferred languages.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
-  
+}
