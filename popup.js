@@ -10,4 +10,3 @@ document.getElementById('saveLang').addEventListener('click', function () {
         alert('Language preferences saved.');
     });
 });
-
